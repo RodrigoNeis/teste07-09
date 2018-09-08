@@ -26,6 +26,7 @@ public class FileTools {
         File file = new File(FILE_PATH_OUT + "RodrigoNeis.done.dat");
         try {
             FileUtils.writeStringToFile(file, outPutData, "ISO-8859-1", false);
+            System.out.println("The file was created or updated");
         } catch (IOException e) {
             e.printStackTrace();
         }

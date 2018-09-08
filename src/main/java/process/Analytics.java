@@ -7,6 +7,7 @@ import vo.SalesMan;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by rneis on 07/09/2018.
@@ -54,7 +55,7 @@ public class Analytics {
     public SalesMan getWorstSalesMan() {
         String salesName = null;
         Double value = null;
-        for (HashMap.Entry<String, Double> entry : getHashSalesManNameAndTotalSales().entrySet()) {
+        for (Map.Entry<String, Double> entry : getHashSalesManNameAndTotalSales().entrySet()) {
 
             String key = entry.getKey();
             Double mapValue = entry.getValue();
