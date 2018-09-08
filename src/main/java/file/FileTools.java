@@ -10,10 +10,10 @@ import java.util.List;
  * Created by rneis on 07/09/2018.
  */
 public class FileTools {
-    private static final String FILE_PATH_IN = DEFAULT_FILE_DIRECTORY + "in" + File.separator;
-    private static final String FILE_PATH_OUT = DEFAULT_FILE_DIRECTORY + "OUT" + File.separator;
     private static String homePath = System.getenv("HOMEPATH");
     private static final String DEFAULT_FILE_DIRECTORY = homePath + File.separator + "data" + File.separator;
+    private static final String FILE_PATH_IN = DEFAULT_FILE_DIRECTORY + "in" + File.separator;
+    private static final String FILE_PATH_OUT = DEFAULT_FILE_DIRECTORY + "OUT" + File.separator;
 
     public static List<File> readAllDatFiles() {
         File dir = new File(FILE_PATH_IN);
